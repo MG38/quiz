@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Biology Quiz - Eukaryotic vs Prokaryotic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cell Biology Quiz: Eukaryotic vs Prokaryotic</h1>
+            <p>Test your knowledge about cell types and their characteristics</p>
+        </header>
+        
+        <div class="content">
+            <!-- Welcome Section -->
+            <section id="welcome-section" class="welcome-section">
+                <div class="card">
+                    <h2>Welcome to the Cell Biology Quiz</h2>
+                    <p>This quiz will test your knowledge about the differences between eukaryotic and prokaryotic cells.</p>
+                    <p>The quiz consists of 20 multiple-choice questions. Enter your name to begin.</p>
+                    
+                    <div class="input-group">
+                        <label for="student-name">Student Name:</label>
+                        <input type="text" id="student-name" placeholder="Enter your name here">
+                    </div>
+                    
+                    <button id="start-btn" class="btn">Start Quiz</button>
+                </div>
+            </section>
+            
+            <!-- Quiz Section -->
+            <section id="quiz-section" class="quiz-section">
+                <div class="card">
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress" id="progress-bar"></div>
+                        </div>
+                        <div class="progress-text" id="progress-text">Question 1 of 20</div>
+                    </div>
+                    
+                    <div class="question-container">
+                        <div class="question-text" id="question-text"></div>
+                        
+                        <div class="options-container" id="options-container">
+                            <!-- Options will be added here dynamically -->
+                        </div>
+                        
+                        <div class="feedback" id="feedback">
+                            <div id="feedback-text"></div>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <button id="submit-btn" class="btn" disabled>Submit Answer</button>
+                            <button id="next-btn" class="btn btn-success hidden">Next Question</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Results Section -->
+            <section id="results-section" class="results-section">
+                <div class="card">
+                    <h2 id="results-title">Congratulations! You've Completed the Quiz</h2>
+                    <div class="score" id="score">0/20</div>
+                    <p id="results-message"></p>
+                    
+                    <div class="diagram-container">
+                        <div class="cell-diagram">
+                            <h3>Eukaryotic Cell</h3>
+                            <ul>
+                                <li>Membrane-bound nucleus</li>
+                                <li>Contains membrane-bound organelles</li>
+                                <li>Contains mitochondria</li>
+                                <li>Contains endoplasmic reticulum</li>
+                                <li>Contains Golgi apparatus</li>
+                                <li>Linear chromosomes</li>
+                                <li>80S ribosomes</li>
+                                <li>Can be multicellular</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="cell-diagram">
+                            <h3>Prokaryotic Cell</h3>
+                            <ul>
+                                <li>No membrane-bound nucleus</li>
+                                <li>Lacks membrane-bound organelles</li>
+                                <li>DNA in cytoplasm</li>
+                                <li>Cell wall with peptidoglycan</li>
+                                <li>70S ribosomes</li>
+                                <li>Circular DNA</li>
+                                <li>Typically single-celled</li>
+                                <li>Generally smaller in size</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <button id="restart-btn" class="btn" style="margin-top: 30px;">Restart Quiz</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
